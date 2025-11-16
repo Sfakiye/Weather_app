@@ -1,0 +1,186 @@
+2025-04-07 15:41:21,238 - ERROR - Error updating weather data: 'method_descriptor' object has no attribute 'today'
+2025-04-07 15:41:42,764 - ERROR - Error updating weather data: 'method_descriptor' object has no attribute 'today'
+2025-04-07 15:44:44,772 - ERROR - Error retrieving latest date from database: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-07 15:44:44,773 - INFO - Today's date: 2025-04-07
+2025-04-07 15:44:44,773 - INFO - Latest date in database: None
+2025-04-07 15:44:44,773 - INFO - No existing data found. Triggering full download.
+2025-04-07 15:46:44,539 - ERROR - Error retrieving latest date from database: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-07 15:46:44,540 - INFO - Today's date: 2025-04-07
+2025-04-07 15:46:44,540 - INFO - Latest date in database: None
+2025-04-07 15:46:44,541 - INFO - No existing data found. Triggering full download.
+2025-04-07 15:48:41,911 - ERROR - Error retrieving latest date from database: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-07 16:08:10,119 - ERROR - Error retrieving latest date from database: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-07 16:08:12,701 - ERROR - Error retrieving latest date from database: type object 'datetime.datetime' has no attribute 'datetime'
+2025-04-07 16:08:18,583 - INFO - Fetched 457 records from DB.
+2025-04-07 16:08:36,631 - INFO - Fetched 457 records from DB.
+2025-04-07 16:09:38,615 - INFO - Fetched 457 records from DB.
+2025-04-07 16:10:24,398 - INFO - Fetched 457 records from DB.
+2025-04-07 16:10:24,400 - INFO - Today's date: 2025-04-07
+2025-04-07 16:10:24,401 - INFO - Latest date in database: 2025-04-06
+2025-04-07 16:10:24,401 - INFO - Updating from 2025-04-07 to 2025-04-07
+2025-04-07 16:10:24,402 - ERROR - Error updating weather data: WeatherScraper.fetch_weather_data() got an unexpected keyword argument 'year'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 57, in update_weather_data
+    new_data = self.scraper.fetch_weather_data(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: WeatherScraper.fetch_weather_data() got an unexpected keyword argument 'year'
+2025-04-07 16:12:46,593 - INFO - Fetched 457 records from DB.
+2025-04-07 16:12:46,599 - INFO - Checking for updates: today=2025-04-07, latest_in_db=2025-04-06
+2025-04-07 16:12:46,599 - INFO - Fetching weather data for: year=2025, month=4
+2025-04-07 16:23:16,002 - INFO - Fetched 457 records from DB.
+2025-04-07 16:23:19,043 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 85, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-07 16:50:21,339 - INFO - Fetched 457 records from DB.
+2025-04-07 16:50:22,157 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 85, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-07 17:41:17,709 - INFO - Fetched 457 records from DB.
+2025-04-07 17:45:44,530 - INFO - Fetched 457 records from DB.
+2025-04-07 17:45:45,772 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-07 17:46:40,548 - INFO - Fetched 457 records from DB.
+2025-04-07 17:46:41,279 - ERROR - Error updating weather data: %s
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-07 17:47:27,098 - INFO - Fetched 457 records from DB.
+2025-04-07 17:47:28,022 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-07 17:53:23,620 - INFO - Fetched 457 records from DB.
+2025-04-07 17:53:24,891 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-08 19:33:45,747 - INFO - Fetched 457 records from DB.
+2025-04-08 19:33:46,843 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-08 19:34:38,281 - INFO - Fetched 457 records from DB.
+2025-04-08 19:34:39,312 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-08 19:35:39,138 - INFO - Fetched 457 records from DB.
+2025-04-08 19:35:39,904 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:20:22,701 - INFO - Fetched 457 records from DB.
+2025-04-15 12:26:43,395 - INFO - Fetched 457 records from DB.
+2025-04-15 12:26:45,942 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 88, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:31:22,122 - INFO - Fetched 457 records from DB.
+2025-04-15 12:31:27,504 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 87, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:36:33,403 - INFO - Fetched 856 records from DB.
+2025-04-15 12:36:35,282 - WARNING - Failed to fetch data for 2025-04: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:39:31,220 - INFO - Fetched 856 records from DB.
+2025-04-15 12:39:33,165 - WARNING - Failed to fetch data for 2025-04: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:42:18,947 - INFO - Fetched 856 records from DB.
+2025-04-15 12:42:25,295 - WARNING - Failed to fetch data for 2025-04: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:42:47,471 - INFO - Fetched 856 records from DB.
+2025-04-15 12:42:48,904 - WARNING - Failed to fetch data for 2025-04: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:45:57,090 - INFO - Fetched 856 records from DB.
+2025-04-15 12:45:59,033 - ERROR - Error updating weather data: time data '0' does not match format '%Y-%m-%d'
+Traceback (most recent call last):
+  File "c:\Users\Podos\OneDrive\Desktop\weather_app\weather_processor.py", line 91, in update_weather_data
+    if start <= datetime.strptime(row[1], "%Y-%m-%d").date() <= end
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 555, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Podos\AppData\Local\Programs\Python\Python312\Lib\_strptime.py", line 333, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '0' does not match format '%Y-%m-%d'
+2025-04-15 12:51:09,601 - INFO - Fetched 856 records from DB.
+2025-04-15 13:20:09,734 - INFO - Fetched 856 records from DB.
+2025-04-15 13:21:22,366 - ERROR - Error generating line plot: invalid literal for int() with base 10: ''
