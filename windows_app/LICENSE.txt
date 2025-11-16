@@ -1,5 +1,0 @@
-Weather App License Agreement
-
-This software is provided "as is" without any warranties. By using this application, you agree not to modify, distribute, or sell it without permission from the author.
-
-(c) 2025 Hannah Daniel and Sakshi kumari. All rights reserved.
