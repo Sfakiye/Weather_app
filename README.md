@@ -4,11 +4,11 @@ WeatherApp is a lightweight Python application that automatically **fetches, sto
 
 > ⚠️ **Project Status:**  
 > This project is **currently under active development**.  
-> The version uploaded to this repository represents **Milestone One**, which includes the basic scraping and storage functionality.
+> The version uploaded to this repository represents **Milestone One and Milestone Two**, which includes the basic scraping ,storage functionality,plotting and user interface.
 
 ---
 
-## ✨ Features (Milestone One)
+## ✨ Features
 
 - 📥 **Automatic weather scraping** from an online source  
 - 🗂️ **Local SQLite database** (`weather.db`) for storing daily weather data  
